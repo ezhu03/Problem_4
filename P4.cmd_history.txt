@@ -1,0 +1,20 @@
+  335  cd Problem_4
+  336  git init
+  337  git checkout -b main
+  338  git remote add origin https://github.com/ezhu03/Problem_4.git
+  339  git push -u origin main
+  340  git add .
+  341  git commit -m "init"
+  342  git push -u origin main
+  343  git checkout -b feature_branch
+  344  echo "hello world!" >> README.md
+  345  git add README.md
+  346  git commit -m "added README file"
+  347  git push -u origin feature_branch
+  348  git checkout main
+  349  git merge feature_branch
+  350  git add .
+  351  git commit -m "merged feature_branch"
+  352  git push -u origin main
+  353  git pull origin main
+  354  history | tail -n 20  >> P4.cmd_history.txt
